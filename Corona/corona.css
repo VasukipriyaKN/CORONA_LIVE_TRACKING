@@ -1,0 +1,232 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+    margin: 0%;
+    padding: 5%;
+    animation-name: background;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    cursor: default;
+    
+}
+@keyframes background{
+    0%{background-color: rgb(0, 255, 170);}
+    50%{background-color: rgb(0, 132, 255);}
+    100%{background-color: rgb(0, 255, 170);}
+
+}
+.heading{
+    margin: auto;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 75px;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    animation-name: heading;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    text-shadow: 0px 0px 8px black;
+    
+}
+@keyframes heading{
+    0%{color: rgb(134, 133, 133);}
+    50%{color: rgb(194, 190, 190);}
+    100%{color: rgb(134, 133, 133);}
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.9); 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 36px;
+    color: #818181;
+    display: block; 
+    transition: 0.3s; 
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  span{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    position: relative;
+    top: -100px;
+  }
+
+  .nav{
+    position: fixed;
+    left: 50px;
+    top: 50px;
+  }
+
+  .top{
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+  }
+.worldPopulation,.worldCorona{
+    padding-top: 10%;
+    margin: auto;
+    color: silver;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-weight: bolder;
+    width: max-content;
+    text-shadow: 0px 0px 5px black;
+}
+.worldPopulationCount,.worldCoronaCount{
+    text-align: start;
+    color: rgb(153, 0, 255);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    text-shadow: none;
+}
+.para,.coronaPara{
+  width: 75%;
+  text-align: center  ;
+  margin: auto;
+  padding-top: 5%;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.tab-pane{
+  flex-wrap: nowrap;
+  width: max-content;
+  margin: auto;
+}
+
+h4{
+  font-family: 'Orbitron', sans-serif;
+  color: rgb(0, 255, 0);
+
+}
+
+.faq1,.faq3,.faq5{
+  margin-top: 7%;
+  margin-left: auto;
+  color: rgb(255, 0, 119);
+  text-align: start;
+  width: 50%;
+  flex-wrap: wrap;
+  font-family: 'Open Sans', sans-serif;
+}
+.faq2,.faq4{
+  margin-top: 7%;
+  margin-right: auto;
+  color: rgb(255, 0, 119);
+  text-align: end;
+  width: 50%;
+  flex-wrap: wrap;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3{
+  color: #ff00b3;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+form{
+  text-align: center;
+}
+
+input{
+  background: transparent;
+  border: 2px solid black;
+  border-radius: 10px;
+  outline: none;
+  text-decoration: underline;
+  width: max-content;
+  padding: 1%;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 2%;
+
+}
+
+input:hover{
+  zoom: 110%;
+}
+
+input:focus{
+  color: white;
+  box-shadow: 0px 0px 5px 0px black;
+}
+::placeholder{
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+
+}
+
+.help p{
+  text-align: center;
+  color: #00317a;
+  font-size: 20px;
+}
+
+.site-meta{
+  text-align: center;
+  color: #00317a;
+  font-size: 20px;
+}
+
+.dev {
+  margin-top: 5%;
+  color: #00317a;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+
+}
